@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-reverse {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 35s linear infinite;
+    width: max-content;
+}
+
+.animate-scroll-reverse {
+    animation: scroll-reverse 35s linear infinite;
+    width: max-content;
+}
