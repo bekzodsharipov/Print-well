@@ -50,9 +50,9 @@ backdrop.addEventListener("click", closeMenuFn);
 
 const swiper = new Swiper(".mySwiper", {
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 10,
   grabCursor: true,
+  centeredSlides: false,
+  speed: 800,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
@@ -62,9 +62,66 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".prev-btn",
   },
   breakpoints: {
-    640: { slidesPerView: 1.2, spaceBetween: 0 },
-    800: { slidesPerView: 3.5, spaceBetween: 0 },
-    1024: { slidesPerView: 2.5, spaceBetween: 0 },
-    1280: { slidesPerView: 3.7, spaceBetween: 0 },
+    0: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 24,
+    },
+    1024: {
+      slidesPerView: 3.5,
+      spaceBetween: 20,
+    },
   },
+});
+
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+  const header = item.querySelector(".faq-header");
+  const content = item.querySelector(".faq-content");
+  const plusIcon = item.querySelector(".plus-icon");
+  const minusIcon = item.querySelector(".minus-icon");
+
+  header.addEventListener("click", () => {
+    const isOpen = content.classList.contains("open");
+
+    // Boshqalarni yopamiz
+    faqItems.forEach((el) => {
+      const c = el.querySelector(".faq-content");
+      c.style.maxHeight = null;
+      c.classList.remove("open", "opacity-100", "mt-4");
+      c.classList.add("opacity-0");
+      el.querySelector(".plus-icon").classList.remove("hidden");
+      el.querySelector(".minus-icon").classList.add("hidden");
+    });
+
+    // Shu elementni ochamiz
+    if (!isOpen) {
+      content.classList.add("open", "mt-4");
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.classList.remove("opacity-0");
+      content.classList.add("opacity-100");
+      plusIcon.classList.add("hidden");
+      minusIcon.classList.remove("hidden");
+    } else {
+      content.classList.remove("open", "mt-4");
+      content.style.maxHeight = null;
+      content.classList.remove("opacity-100");
+      content.classList.add("opacity-0");
+      plusIcon.classList.remove("hidden");
+      minusIcon.classList.add("hidden");
+    }
+  });
 });
