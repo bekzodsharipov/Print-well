@@ -97,7 +97,6 @@ faqItems.forEach((item) => {
   header.addEventListener("click", () => {
     const isOpen = content.classList.contains("open");
 
-    // Boshqalarni yopamiz
     faqItems.forEach((el) => {
       const c = el.querySelector(".faq-content");
       c.style.maxHeight = null;
@@ -107,7 +106,6 @@ faqItems.forEach((item) => {
       el.querySelector(".minus-icon").classList.add("hidden");
     });
 
-    // Shu elementni ochamiz
     if (!isOpen) {
       content.classList.add("open", "mt-4");
       content.style.maxHeight = content.scrollHeight + "px";
@@ -124,4 +122,12 @@ faqItems.forEach((item) => {
       minusIcon.classList.add("hidden");
     }
   });
+});
+
+const overlay = document.getElementById('video-overlay');
+const iframe = document.getElementById('youtube-video');
+
+overlay.addEventListener('click', () => {
+    iframe.src += "&autoplay=1";
+    overlay.style.display = 'none';
 });
