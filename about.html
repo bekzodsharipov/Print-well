@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>About</title>
+</head>
+
+<body class="bg-[#E9EBEE]">
+
+    <header class="pt-2.5 md:pt-5 pb-0 font-manrope md:pb-5 relative">
+        <div class="max-w-[1240px] mx-auto px-5 flex items-center justify-between">
+            <a href="#" class="lg:max-w-22 max-w-18 w-full">
+                <img src="./images/icons/header-logo.svg" alt="header logo">
+            </a>
+
+            <ul class="items-center gap-5 lg:flex hidden">
+                <li class="font-medium text-[#282121] hover:opacity-50 cursor-pointer transition"> <a
+                        href="#">Xizmatlarimiz</a></li>
+                <li class="font-medium text-[#282121] hover:opacity-50 cursor-pointer transition"> <a
+                        href="#">Katologlar</a></li>
+                <li class="font-medium text-[#282121] hover:opacity-50 cursor-pointer transition">
+                    <a href="#">Biz
+                        ishlarimiz</a>
+                </li>
+                <li class="font-medium text-[#282121] hover:opacity-50 cursor-pointer transition"> <a
+                        href="#">Hamkorlarimiz</a></li>
+                <li class="font-medium text-[#282121] hover:opacity-50 cursor-pointer transition"> <a
+                        href="./about.html">Biz
+                        haqimizda</a></li>
+                <li class="font-medium text-[#282121] hover:opacity-50 cursor-pointer transition"> <a href="#">Aloqa</a>
+                </li>
+            </ul>
+
+            <div class="flex items-center gap-4">
+                <div class="relative z-30 inline-block">
+                    <div id="langBtn"
+                        class="border rounded-lg md:rounded-2xl flex items-center justify-center cursor-pointer p-2.25 md:p-3 font-semibold text-[#282121] transition-all duration-300 hover:shadow-md hover:scale-[1.02] select-none">
+                        <span id="selectedLang">UZ</span>
+                    </div>
+
+                    <div id="langMenu"
+                        class="absolute top-full left-0 right-0 mt-2 bg-[#E9EBEE] border rounded-lg shadow-lg opacity-0 scale-95 pointer-events-none transform transition-all duration-300 origin-top">
+                        <div class="flex flex-col items-center gap-3 p-3 font-semibold text-[#282121]">
+                            <button class="hover:text-[#5a4747] transition cursor-pointer">UZ</button>
+                            <button class="hover:text-[#5a4747] transition cursor-pointer">RU</button>
+                            <button class="hover:text-[#5a4747] transition cursor-pointer">EN</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hamburgerBtn" class="cursor-pointer block lg:hidden">
+                    <svg id="hamburgerIcon" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 7H21" stroke="#282121" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M3 12H21" stroke="#282121" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M3 17H21" stroke="#282121" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <button
+                    class="hidden lg:flex cursor-pointer  [background:linear-gradient(94.96deg,#031425_-2.42%,#121212_105.27%)]
+                    hover:[background:#E9EBEE] hover:text-black px-5 py-3 rounded-2xl uppercase border-1 hover:border transition-all duration-500 text-white">
+                    BUYURTMA BERISH
+                </button>
+            </div>
+        </div>
+
+        <div id="menuBackdrop"
+            class="fixed flex lg:hidden inset-0  bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+        </div>
+
+        <div id="mobileMenu"
+            class="fixed flex lg:hidden top-0 left-0 h-full w-[70%] bg-[linear-gradient(94.96deg,_#031425_-2.42%,_#121212_105.27%)] text-white transform -translate-x-full transition-transform duration-500 ease-in-out z-50 flex flex-col">
+
+            <div class="flex items-center justify-between px-5 py-5 border-b border-white/10">
+                <img src="./images/icons/header-logo-mini.svg" alt="logo" class="w-24">
+                <button id="closeMenu" class="cursor-pointer">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="flex flex-col gap-5 px-6 py-8 text-lg font-medium">
+                <li class="hover:text-gray-300 cursor-pointer"> <a href="#">Xizmatlarimiz</a></li>
+                <li class="hover:text-gray-300 cursor-pointer"> <a href="#">Katologlar</a></li>
+                <li class="hover:text-gray-300 cursor-pointer">
+                    <a href="#">Biz
+                        ishlarimiz</a>
+                </li>
+                <li class="hover:text-gray-300 cursor-pointer"> <a href="#">Hamkorlarimiz</a></li>
+                <li class="hover:text-gray-300 cursor-pointer"> <a href="./about.html">Biz
+                        haqimizda</a></li>
+                <li class="hover:text-gray-300 cursor-pointer"> <a href="#">Aloqa</a>
+                </li>
+            </ul>
+
+            <div class="px-6 mt-auto pb-6">
+                <button
+                    class="w-full bg-white text-[#121212] py-3 rounded-2xl uppercase font-semibold hover:bg-gray-100 transition">
+                    BUYURTMA BERISH
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-5 md:pt-15 pb-10 md:pb-20">
+        <div
+            class="swiper mySwiper2 max-w-[1200px] hero  justify-center mx-auto px-5 relative rounded-[20px] md:rounded-[40px] text-center bg-no-repeat bg-cover bg-center min-h-[580px]">
+            <div class="swiper-wrapper relative z-10">
+                <div class="swiper-slide flex flex-col items-center justify-center pt-86.75 md:pt-64.5">
+                    <h2
+                        class="text-white text-[clamp(24px,6vw,64px)] leading-[1.2] font-medium font-poppins mb-2 md:mb-4">
+                        О
+                        НАС</h2>
+                    <p
+                        class="text-[#F7F8F8] max-w-[718px] w-full text-base md:text-xl lg:text-2xl font-manrope mb-4 md:mb-6 leading-[1.3] font-medium">
+                        E’tiboringizga 1997-yildan buyon eng yetakchi g‘oyalarni hayotga tatbiq etib kelayotgan
+                        Print.uz
+                        -
+                        matbaa
+                        sohasidagi ishonchli hamkoringiz.
+                    </p>
+                    <button
+                        class="bg-[linear-gradient(94.96deg,_#F7F8F8_-2.42%,_#FFFFFF_105.27%)] hover:opacity-80 mb-7 md:mb-10 font-manrope font-semibold rounded-[20px] text-black uppercase cursor-pointer border-none p-5.75 md:p-6.25 max-w-78 w-full">
+                        BUYURTMA BERISH
+                    </button>
+                </div>
+                <div class="swiper-slide flex flex-col items-center justify-center pt-86.75 md:pt-64.5">
+                    <h2
+                        class="text-white text-[clamp(24px,6vw,64px)] leading-[1.2] font-medium font-poppins mb-2 md:mb-4">
+                        О
+                        НАС</h2>
+                    <p
+                        class="text-[#F7F8F8] max-w-[718px] w-full text-base md:text-xl lg:text-2xl font-manrope mb-4 md:mb-6 leading-[1.3] font-medium">
+                        E’tiboringizga 1997-yildan buyon eng yetakchi g‘oyalarni hayotga tatbiq etib kelayotgan
+                        Print.uz
+                        -
+                        matbaa
+                        sohasidagi ishonchli hamkoringiz.
+                    </p>
+                    <button
+                        class="bg-[linear-gradient(94.96deg,_#F7F8F8_-2.42%,_#FFFFFF_105.27%)] hover:opacity-80 mb-7 md:mb-10 font-manrope font-semibold rounded-[20px] text-black uppercase cursor-pointer border-none p-5.75 md:p-6.25 max-w-78 w-full">
+                        BUYURTMA BERISH
+                    </button>
+                </div>
+                <div class="swiper-slide flex flex-col items-center justify-center pt-86.75 md:pt-64.5">
+                    <h2
+                        class="text-white text-[clamp(24px,6vw,64px)] leading-[1.2] font-medium font-poppins mb-2 md:mb-4">
+                        О
+                        НАС</h2>
+                    <p
+                        class="text-[#F7F8F8] max-w-[718px] w-full text-base md:text-xl lg:text-2xl font-manrope mb-4 md:mb-6 leading-[1.3] font-medium">
+                        E’tiboringizga 1997-yildan buyon eng yetakchi g‘oyalarni hayotga tatbiq etib kelayotgan
+                        Print.uz
+                        -
+                        matbaa
+                        sohasidagi ishonchli hamkoringiz.
+                    </p>
+                    <button
+                        class="bg-[linear-gradient(94.96deg,_#F7F8F8_-2.42%,_#FFFFFF_105.27%)] hover:opacity-80 mb-7 md:mb-10 font-manrope font-semibold rounded-[20px] text-black uppercase cursor-pointer border-none p-5.75 md:p-6.25 max-w-78 w-full">
+                        BUYURTMA BERISH
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="bg-[#E9EBEE]">
+        <div class="max-w-[1200px] mx-auto px-4 grid gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+                <div class="bg-white rounded-[20px] p-5 md:py-10 md:px-5 shadow-sm flex flex-col justify-between">
+                    <div
+                        class="bg-[#E9EBEE] text-[#4A4E5A] py-1 rounded-full w-8 h-8 flex items-center justify-center mb-6 md:mb-8 text-sm font-medium">
+                        1
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-semibold leading-[1.2] text-[#383A42] mb-3">
+                            DUNYOQARASHNI KENGAYTIRISH
+                        </h3>
+                        <p class="text-base md:text-lg leading-[1.4] text-[#40444C]">
+                            Biz sizning maqsadlaringiz bilan birga o‘smoqdamiz, imkoniyatlarimizni kengaytirib, kutilgan
+                            natijalardan bir qadam oldinda bo‘lishga intilamiz.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[20px] p-5 md:py-10 md:px-5 shadow-sm flex flex-col justify-between">
+                    <div
+                        class="bg-[#E9EBEE] text-[#4A4E5A] py-1 rounded-full w-8 h-8 flex items-center justify-center mb-6 md:mb-8 text-sm font-medium">
+                        2
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-semibold leading-[1.2] text-[#383A42] mb-3">
+                            ZAMONAVIY TEXNIKALAR
+                        </h3>
+                        <p class="text-base md:text-lg leading-[1.4] text-[#40444C]">
+                            Bizdagi texnik jihozlar — har bir bosma ishda mukammallik va yangilikning kafolatidir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+                <div class="bg-white rounded-[20px] p-5 md:py-10 md:px-5 shadow-sm">
+                    <div
+                        class="bg-[#E9EBEE] text-[#4A4E5A] py-1 rounded-full w-8 h-8 flex items-center justify-center mb-6 md:mb-8 text-sm font-medium">
+                        3
+                    </div>
+                    <h3 class="text-xl md:text-2xl lg:text-[28px] font-semibold leading-[1.2] text-[#383A42] mb-3">
+                        PROFESSIONAL JAMOA
+                    </h3>
+                    <p class="text-base md:text-lg leading-[1.4] text-[#40444C]">
+                        Bizning dizaynerlarimiz — sizning istalgan orzuingizni jonlantira oladigan haqiqiy sehrgarlar.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-[20px] p-5 md:py-10 md:px-5 shadow-sm">
+                    <div
+                        class="bg-[#E9EBEE] text-[#4A4E5A] py-1 rounded-full w-8 h-8 flex items-center justify-center mb-6 md:mb-8 text-sm font-medium">
+                        4
+                    </div>
+                    <h3 class="text-xl md:text-2xl lg:text-[28px] font-semibold leading-[1.2] text-[#383A42] mb-3">
+                        INDIVIDUAL YONDASHUV
+                    </h3>
+                    <p class="text-base md:text-lg leading-[1.4] text-[#40444C]">
+                        Har bir loyihaga alohida yondashamiz. Uning ranglari, o‘lchamlari va ma’nosi biz uchun muhim.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-[20px] p-5 md:py-10 md:px-5 shadow-sm">
+                    <div
+                        class="bg-[#E9EBEE] text-[#4A4E5A] py-1 rounded-full w-8 h-8 flex items-center justify-center mb-6 md:mb-8 text-sm font-medium">
+                        5
+                    </div>
+                    <h3 class="text-xl md:text-2xl lg:text-[28px] font-semibold leading-[1.2] text-[#383A42] mb-3">
+                        YETKAZIB BERISH
+                    </h3>
+                    <p class="text-base md:text-lg leading-[1.4] text-[#40444C]">
+                        Buyurtmalarni kichik detaligacha zarar yetkazmasdan o‘z vaqtida yetkazib beramiz.
+                    </p>
+                </div>
+            </div>
+
+            <div class="video-wrapper relative h-[240px] md:h-[600px] mb-5 md:mb-10.5">
+                <div id="video-overlay"
+                    class="absolute inset-0 bg-white rounded-[20px] md:rounded-[40px] flex items-center justify-center h-[240px] md:h-[600px] z-[2]">
+                    <svg class="cursor-pointer max-w-[40px] md:max-w-[72px] w-full" width="72" height="72"
+                        viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M35.9099 68.25C18.1499 68.25 3.65991 53.79 3.65991 36C3.65991 18.21 18.1499 3.75 35.9099 3.75C53.6699 3.75 68.1599 18.21 68.1599 36C68.1599 53.79 53.6999 68.25 35.9099 68.25ZM35.9099 8.25C20.6099 8.25 8.15991 20.7 8.15991 36C8.15991 51.3 20.6099 63.75 35.9099 63.75C51.2099 63.75 63.6599 51.3 63.6599 36C63.6599 20.7 51.2099 8.25 35.9099 8.25Z"
+                            fill="#4A4E5A" />
+                        <path
+                            d="M31.68 50.97C30.36 50.97 29.1 50.64 27.99 50.01C25.41 48.51 23.97 45.57 23.97 41.73V31.68C23.97 27.84 25.38 24.9 27.96 23.4C30.54 21.9 33.81 22.14 37.14 24.06L45.84 29.07C49.17 30.99 51 33.69 51 36.69C51 39.66 49.17 42.39 45.84 44.31L37.14 49.32C35.28 50.43 33.39 50.97 31.68 50.97ZM31.68 26.91C31.14 26.91 30.63 27.03 30.24 27.27C29.1 27.93 28.47 29.52 28.47 31.68V41.73C28.47 43.86 29.1 45.48 30.24 46.11C31.35 46.77 33.06 46.5 34.92 45.45L43.62 40.44C45.48 39.36 46.53 38.01 46.53 36.72C46.53 35.43 45.45 34.08 43.62 33L34.92 27.99C33.72 27.27 32.61 26.91 31.68 26.91Z"
+                            fill="#4A4E5A" />
+                    </svg>
+                </div>
+
+                <iframe id="youtube-video" src="https://www.youtube.com/embed/_7nMVT7s_QU?si=Fp3wzyPLiI3lEKuR"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    class="relative max-w-[1200px] w-full h-[240px] md:h-[600px] mx-auto rounded-[23px] md:rounded-[43px]"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pb-10 md:pb-20">
+        <div
+            class="max-w-[1200px] bg-[#151517] rounded-2xl md:rounded-4xl mx-auto px-5 flex items-center justify-center text-center">
+            <div class="py-7 px-0 md:p-10 gap-2.5 w-full">
+                <div
+                    class="flex items-center gap-2 py-1 px-2 bg-[#1F1F21] max-w-[222px] md:max-w-[285px] rounded-[28px] justify-center mx-auto mb-5">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        transform="rotate(0) scale(1, 1)">
+                        <path
+                            d="M19.5621 20.2178C17.6077 22.1721 12.6028 20.3358 8.38327 16.1162C4.16372 11.8967 2.32739 6.89179 4.2817 4.93746L5.56847 3.65069C6.4568 2.76237 7.92054 2.78585 8.83784 3.70314L10.8309 5.69623C11.7482 6.61353 11.7717 8.07727 10.8834 8.9656L10.607 9.24198C10.1274 9.7216 10.0804 10.4953 10.5261 11.0354C10.956 11.5563 11.4194 12.0752 11.9219 12.5776C12.4244 13.0801 12.9432 13.5435 13.4641 13.9734C14.0042 14.4191 14.7779 14.3721 15.2575 13.8925L15.5339 13.6161C16.4222 12.7278 17.886 12.7513 18.8033 13.6686L20.7964 15.6617C21.7137 16.579 21.7371 18.0427 20.8488 18.931L19.5621 20.2178Z"
+                            fill="#097bff" stroke="#097bff" stroke-width="1.5"></path>
+                    </svg>
+                    <span class="text-xs md:text-base font-semibold leading-[1.3] text-[#EDEEF1]">Tez o’rada aloqaga
+                        chiqamiz</span>
+                </div>
+
+                <h2 class="text-[clamp(24px,3vw,40px)] font-medium leading-[1.2] text-white mb-4">HOZIROQ BUYURTMA
+                    BERING</h2>
+                <p
+                    class="text-xl hidden md:block font-medium leading-[1.3] text-[#EDEEF1] max-w-[961px] w-full mb-5 md:mb-20">
+                    Chop etish
+                    bo‘yicha sifatli va ishonchli yechim izlayapsizmi? PrintWell bilan bog‘laning — siz
+                    tasavvur qilgan dizaynni real mahsulotga aylantiramiz. Bugun buyurtma bering!</p>
+
+                <form
+                    class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-1 md:gap-4.25 justify-center items-center mx-auto">
+                    <div class="flex flex-col items-start mb-3.75 md:mb-6">
+                        <label for="name" class="text-base font-normal leading-[140%] text-white mb-1">
+                            Ismingiz
+                        </label>
+                        <input
+                            class="bg-[#1F1F21] border-[0.5px] border-[#5B616E] outline-none rounded-xl text-[#5B616E] py-2 pr-12.5 pl-4 w-full h-[64px]"
+                            type="text" id="name" required placeholder="Safarali adada">
+                    </div>
+
+                    <div class="flex flex-col items-start mb-3.75 md:mb-6">
+                        <label for="tel" class="text-base font-normal leading-[140%] text-white mb-1">
+                            Telefon raqamingiz
+                        </label>
+                        <input
+                            class="bg-[#1F1F21] border-[0.5px] border-[#5B616E] outline-none rounded-xl text-[#5B616E] py-2 pr-12.5 pl-4 w-full h-[64px]"
+                            type="text" id="tel" required placeholder="+998 90 122 22 00">
+                    </div>
+                    <div class="flex flex-col items-start mb-3.75 md:mb-6">
+                        <label for="company" class="text-base font-normal leading-[140%] text-white mb-1">
+                            Kompaniyangiz nomi
+                        </label>
+                        <input
+                            class="bg-[#1F1F21] border-[0.5px] border-[#5B616E] outline-none rounded-xl text-[#5B616E] py-2 pr-12.5 pl-4 w-full h-[64px]"
+                            type="text" id="company" required placeholder="it asos print">
+                    </div>
+                    <div class="flex flex-col items-start mb-3.75 md:mb-6">
+                        <label for="activity" class="text-base font-normal leading-[140%] text-white mb-1">
+                            Faoliyat yo‘nalishingiz
+                        </label>
+                        <input
+                            class="bg-[#1F1F21] border-[0.5px] border-[#5B616E] outline-none rounded-xl text-[#5B616E] py-2 pr-12.5 pl-4 w-full h-[64px]"
+                            type="text" id="activity" required placeholder="it">
+                    </div>
+                    <div class="flex flex-col items-start mb-3.75 md:mb-6">
+                        <label for="product" class="text-base font-normal leading-[140%] text-white mb-1">
+                            Qiziqqan mahsulotingiz
+                        </label>
+                        <input
+                            class="bg-[#1F1F21] border-[0.5px] border-[#5B616E] outline-none rounded-xl text-[#5B616E] py-2 pr-12.5 pl-4 w-full h-[64px]"
+                            type="text" id="product" required placeholder="boxlar">
+                    </div>
+
+                </form>
+                <button
+                    class="col-span-full justify-self-center rounded-3xl p-4.75 px-18 uppercase transition-all duration-500 bg-white  hover:bg-[#151517] hover:text-white border  hover:border font-semibold w-full md:max-w-[214px] cursor-pointer shadow-[0px_3px_4.3px_0px_#FFFFFF2B]">
+                    Yuborish
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-10 lg:pt-20 pb-20">
+        <div class="max-w-[1200px] mx-auto px-5">
+            <h3 class="text-[clamp(24px,3vw,40px)] font-semibold leading-[1.3] mb-5 md:mb-10 font-poppins">Manzilimiz
+            </h3>
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="flex flex-row lg:flex-col gap-4 mb-5 md:mb-4 lg:max-w-[243px] w-full">
+                    <div>
+                        <h4 class="mb-2 text-xs xs:text-sm md:text-base font-medium leading-[1.3] text-[#25272C]">
+                            Oфис
+                        </h4>
+                        <p
+                            class="w-full lg:max-w-[195px] text-xs xs:text-sm md:text-base font-medium leading-[1.3] text-[#40444C]">
+                            Шайхантахурский район, ул. Соиб Ходжаева, д. 77
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="mb-2 text-xs xs:text-sm md:text-base font-medium leading-[1.3] text-[#25272C]">
+                            Юридический адрес
+                        </h4>
+                        <p
+                            class="w-full lg:max-w-[195px] text-xs xs:text-sm md:text-base font-medium leading-[1.3] text-[#40444C]">
+                            Шайхантахурский район, ул. Соиб Ходжаева, д. 77
+                        </p>
+                    </div>
+                </div>
+
+                <iframe class="rounded-4xl max-w-[956px] w-full h-[178px]"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.6963503356073!2d69.24009663626977!3d41.33721580657106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b8000fe0597%3A0x9562f93501c47c05!2sHazrati%20Imam%20complex!5e0!3m2!1sen!2s!4v1760901913126!5m2!1sen!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="pt-7.75 lg:pt-20 pb-7.75 lg:pb-10 bg-[#151517]">
+        <div class="max-w-300 px-5 mx-auto">
+
+            <div class="flex flex-col md:flex-row items-start justify-between">
+                <div class="mb-5 md:mb-10">
+                    <a href="#">
+                        <img class="max-w-25 mb-4 md:max-w-30 w-full" src="./images/icons/header-logo-mini.svg"
+                            alt="header logo">
+                    </a>
+                    <h3 class="text-xl font-medium leading-[1.3] text-[#F7F8F8] font-poppins mb-1">Qadriyatlarga ega
+                        kuchli
+                        jamoa bilan ishlang.</h3>
+                    <p
+                        class="leading-[1.3] text-sm md:text-base font-medium font-manrope text-[#D8DBDF] mb-5 md:mb-10 max-w-165.5 w-full">
+                        PrintWell’da
+                        biz
+                        har bir loyihaga mas’uliyat, halollik va sifat bilan yondashamiz. Jamoamiz — bu o‘z
+                        ishini chin dildan sevuvchi, ishonchli va fidokor mutaxassislar. Siz ham bizning qadriyatlar
+                        asosida
+                        ishlovchi kuchli jamoamiz bilan muvaffaqiyat sari birga harakat qiling.</p>
+
+                    <div class="flex items-center gap-2 mb-5">
+                        <a href="#"
+                            class="bg-[#25272C] rounded-lg py-2.5 px-1.5 max-w-9 w-full cursor-pointer hover:opacity-50">
+                            <img src="./images/footer/telegram.svg" alt="telegram icons">
+                        </a>
+
+                        <a href="#"
+                            class="bg-[#25272C] rounded-lg py-2 px-1.5 max-w-9 w-full cursor-pointer hover:opacity-50">
+                            <img src="./images/footer/instagram.svg" alt="telegram icons">
+                        </a>
+
+                        <a href="#"
+                            class="bg-[#25272C] rounded-lg py-2 px-1.5 max-w-9 w-full cursor-pointer hover:opacity-50">
+                            <img src="./images/footer/facebook.svg" alt="telegram icons">
+                        </a>
+                    </div>
+
+                    <a class="py-2.5 px-2 bg-[#25272C] rounded-lg hover:opacity-50 flex items-center cursor-pointer gap-2 max-w-47 md:max-w-60 w-full mb-2"
+                        href="#">
+                        <img src="./images/footer/Call.svg" alt="call icons">
+                        <p class="text-base md:text-xl font-medium leading-[1.3] text-[#F7F8F8] font-poppins">+998
+                            90
+                            123 45 67 </p>
+                    </a>
+                    <a class="py-2.5 px-2 bg-[#25272C] rounded-lg hover:opacity-50 flex items-center cursor-pointer gap-2 max-w-47 md:max-w-60 w-full mb-2"
+                        href="#">
+                        <img src="./images/footer/Call.svg" alt="call icons">
+                        <p class="text-base md:text-xl font-medium leading-[1.3] text-[#F7F8F8] font-poppins">+998
+                            90
+                            123 45 67 </p>
+                    </a>
+                </div>
+
+                <ul class="hidden md:flex flex-col items-start gap-4">
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition">Xizmatlarimiz</li>
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition">Katologlar</li>
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition">Biz ishlarimiz
+                    </li>
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition">Hamkorlarimiz</li>
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition">Biz haqimizda</li>
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition">Aloqa</li>
+                </ul>
+            </div>
+
+
+            <div class="max-w-[1200px] w-full border border-[#5B616E] mb-5"></div>
+
+            <div class="flex items-center justify-between">
+                <p class="text-sm md:text-xl font-medium leading-[1.3] text-[#D8DBDF]">© 2025 Asos IT</p>
+                <p class="text-sm md:text-xl font-medium leading-[1.3] text-[#D8DBDF]">Barcha huquqlar himoyalangan</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper(".mySwiper2", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+                loop: true,
+            });
+        });
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
