@@ -131,3 +131,10 @@ overlay.addEventListener('click', () => {
     iframe.src += "&autoplay=1";
     overlay.style.display = 'none';
 });
+
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination",
+  },
+});

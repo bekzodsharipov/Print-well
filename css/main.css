@@ -77,23 +77,22 @@
 
 .swiper-pagination-bullet {
     margin: 0 6px !important;
-}
-
-
-.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-    background-color: #383A42;
-    width: 72px;
-    border-radius: 11px;
+    background-color: #B6BAC3 !important;
+    width: 72px !important;
+    border-radius: 11px !important;
+    height: 4px !important;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: auto !important;
-    bottom: -20px !important;
+    bottom: -10px !important;
     position: relative;
 }
 
-.swiper-pagination-bullet-active-next-next {
-    background-color: #B6BAC3;
+.swiper-pagination-bullet-active {
+    width: 72px !important;
+    height: 4px !important;
+    border-radius: 11px !important;
+    background-color: #383A42 !important;
 }
