@@ -12,7 +12,7 @@
 
 <body class="bg-[#E9EBEE]">
 
-    <header class="pt-2.5 md:pt-5 pb-0 font-manrope md:pb-5 relative">
+    <header class="pt-5 pb-0 font-manrope md:pb-5 relative">
         <div class="max-w-[1240px] mx-auto px-5 flex items-center justify-between">
             <a href="./index.html" class="lg:max-w-22 max-w-18 w-full">
                 <img src="./images/icons/header-logo.svg" alt="header logo">
@@ -37,7 +37,7 @@
             </ul>
 
             <div class="flex items-center gap-4">
-                <div class="relative z-30 inline-block">
+                <div class="relative inline-block">
                     <div id="langBtn"
                         class="border rounded-lg md:rounded-2xl flex items-center justify-center cursor-pointer p-2.25 md:p-3 font-semibold text-[#282121] transition-all duration-300 hover:shadow-md hover:scale-[1.02] select-none">
                         <span id="selectedLang">UZ</span>
@@ -78,7 +78,9 @@
             class="fixed flex lg:hidden top-0 left-0 h-full w-[70%] bg-[linear-gradient(94.96deg,_#031425_-2.42%,_#121212_105.27%)] text-white transform -translate-x-full transition-transform duration-500 ease-in-out z-50 flex flex-col">
 
             <div class="flex items-center justify-between px-5 py-5 border-b border-white/10">
-                <img src="./images/icons/header-logo-mini.svg" alt="logo" class="w-24">
+                <a href="./index.html">
+                    <img src="./images/icons/header-logo-mini.svg" alt="logo" class="w-24">
+                </a>
                 <button id="closeMenu" class="cursor-pointer">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" />
@@ -99,7 +101,6 @@
                 <li class="hover:text-gray-300 cursor-pointer"> <a href="#">Aloqa</a>
                 </li>
             </ul>
-
             <div class="px-6 mt-auto pb-6">
                 <button
                     class="w-full bg-white text-[#121212] py-3 rounded-2xl uppercase font-semibold hover:bg-gray-100 transition">
@@ -109,15 +110,15 @@
         </div>
     </header>
 
+
     <section class="pt-5 md:pt-15 pb-10">
         <div class="max-w-[1200px] mx-auto px-5 bg-white rounded-[40px] ">
-            <div class="py-7 md:py-10 flex flex-col lg:flex-row items-center justify-center">
-                <div
-                    class="order-1 lg:order-2 text-center lg:text-start mx-auto flex flex-col items-center lg:items-start justify-center">
+            <div class="py-7 md:py-10 px-0 md:px-10 flex flex-col lg:flex-row items-center justify-center">
+                <div class="order-1 lg:order-2 text-center lg:text-start mx-auto flex flex-col items-center lg:items-start justify-center">
                     <h2 class="text-2xl md:text-3xl lg:text-5xl font-medium font-poppins leading-[1.2] uppercase mb-4">
                         Xizmatlarimiz</h2>
                     <p
-                        class="text-base md:text-xl font-normal leading-[1.3] text-[#383A42] max-w-[510px] w-full mb-6 md:mb-35 font-manrope">
+                        class="text-base md:text-xl font-normal w-full leading-[1.3] text-[#383A42] mb-6 md:mb-35 font-manrope">
                         E’tiboringizga 1997-yildan buyon eng yetakchi g‘oyalarni hayotga tatbiq etib kelayotgan Print.uz
                         - matbaa sohasidagi ishonchli hamkoringiz.</p>
 
@@ -125,7 +126,7 @@
                         class="bg-[linear-gradient(94.96deg,#1369FF_-2.42%,#1369FF_105.27%)] hover:opacity-80 font-poppins rounded-[20px] font-semibold leading-[1.4] text-white uppercase cursor-pointer border-none p-6.25 max-w-78 w-full">BUYURTMA
                         BERISH</button>
                 </div>
-                <div class="order-0 lg:order-2 mb-5 md:mb-0">
+                <div class="order-0 lg:order-2 mb-5 md:mb-0 max-w-[566px] w-full mx-auto flex items-center justify-center">
                     <img class="rounded-[20px] max-w-[330px] md:max-w-[566px] w-full"
                         src="./images/hero/services-hero-img.avif" alt="services img">
                 </div>
@@ -151,56 +152,56 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 mb-5 md:mb-10">
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box"> 
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
@@ -234,56 +235,56 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 mb-5 md:mb-10">
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
@@ -311,56 +312,56 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 mb-5 md:mb-10">
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
@@ -388,56 +389,56 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 mb-5 md:mb-10">
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
@@ -467,56 +468,56 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 mb-5 md:mb-10">
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
                         alt="services box">
                 </div>
                 <div
-                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-[linear-gradient(140.19deg,#FBFBFB_-55.87%,#F4F4F4_100%),radial-gradient(60.17%_60.17%_at_89.15%_0%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_100%)] rounded-2xl md:rounded-3xl ">
+                    class="flex flex-col w-full md:max-w-[285px] pt-5 pl-4 bg-white rounded-2xl md:rounded-3xl ">
                     <h3 class="text-[10px] sm:text-xs md:text-base font-medium font-poppins leading-[1.2] text-[#40444C]">Mahsulot
                         nomi</h3>
                     <img class="ml-auto mb-0 max-w-35 md:max-w-55 w-full" src="./images/services/box.png"
@@ -905,22 +906,16 @@
 
 
                 <ul class="hidden md:flex flex-col items-start gap-4">
-                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a
-                            href="./services.html">Xizmatlarimiz</a></li>
-                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a
-                            href="#">Katologlar</a></li>
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a href="./services.html">Xizmatlarimiz</a></li>
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a href="#">Katologlar</a></li>
                     <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition">
                         <a href="#">Biz
-                            ishlarimiz
-                        </a>
+                            ishlarimiz</a>
                     </li>
-                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a
-                            href="./partnerships.html">Hamkorlarimiz</a></li>
-                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a
-                            href="./about.html">Biz
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a href="./partnerships.html">Hamkorlarimiz</a></li>
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a href="./about.html">Biz
                             haqimizda</a></li>
-                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a
-                            href="#">Aloqa</a>
+                    <li class="font-medium text-[#EDEEF1] hover:opacity-50 cursor-pointer transition"> <a href="#">Aloqa</a>
                     </li>
                 </ul>
             </div>
@@ -937,20 +932,8 @@
 
 
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var swiper = new Swiper(".mySwiper2", {
-                pagination: {
-                    el: ".swiper-pagination",
-                    dynamicBullets: true,
-                },
-                loop: true,
-            });
-        });
-    </script>
     <script src="./js/app.js"></script>
 </body>
 
